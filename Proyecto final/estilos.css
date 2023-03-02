@@ -19,17 +19,38 @@ img{
 }
 .resumen {
     width: 20%;
+    max-width: 1000px;
     float: left;
+    padding: 20px;
     background-color:aquamarine;
+    
   }
 .especificaciones {
     width: 50%;
+    max-width: 1000px;
+    padding: 20px;
     float: left;
+    box-sizing:border-box;
   }
   p {
     margin-left: 10px;
   }
 .partejava 
 {
-    width: 30%;  
+    width: 50%;
+    max-width: 1000px;  
+    float: right;
+    box-sizing:border-box;
 }
+
+@media screen and (max-width: 1000px){
+    .resumen {
+        width: 100%;
+    }
+    .especificaciones {
+        width: 100%;
+    }
+    .partejava {
+        width: 100%; 
+    }
+} 
